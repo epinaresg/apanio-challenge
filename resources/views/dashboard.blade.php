@@ -86,6 +86,8 @@
                 $('#v-volumen-24-hrs').html(data.volume_usd_24_hours);
                 $('#v-supply').html(data.supply);
 
+                $('#v-change-percent').closest('h3').removeClass('negative').removeClass('positive').addClass((data.change_percent_prev_price > 0) ? 'positive' : 'negative' );
+
                 loadTable();
             });
 
