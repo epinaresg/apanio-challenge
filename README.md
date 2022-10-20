@@ -16,7 +16,9 @@ Utilizamos Laravel Sail para levantar el entorno de desarrollo (https://laravel.
     5. ./vendor/bin/sail artisan migrate:fresh --seed
     6. npm install
     7. npm run build
-    8. Ingresar a http://localhost/
+    8. ./vendor/bin/sail route:clear
+    9. ./vendor/bin/sail config:cache
+    10. Ingresar a http://localhost/
 
 # Como obtener el precio de BTC?
 
