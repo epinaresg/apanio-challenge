@@ -71,13 +71,13 @@
         <script>
 
             // Enable pusher logging - don't include this in production
-            Pusher.logToConsole = false;
+            Pusher.logToConsole = true;
 
             var pusher = new Pusher('e56a15992170c3210520', {
                 cluster: 'us2'
             });
 
-            var channel = pusher.subscribe('crypto-currency-dashboard');
+            var channel = pusher.subscribe('crypto-currency-dashboard-{{ config('broadcasting.connections.pusher.random_string') }}');
             channel.bind('asset-price-change', function(data) {
 
                 $('#v-price').html(data.price);

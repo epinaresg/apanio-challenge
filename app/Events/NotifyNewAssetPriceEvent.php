@@ -36,7 +36,7 @@ class NotifyNewAssetPriceEvent implements ShouldBroadcast
 
     public function broadcastOn()
     {
-        return new Channel('crypto-currency-dashboard');
+        return new Channel('crypto-currency-dashboard-' . config('broadcasting.connections.pusher.random_string'));
     }
 
     public function broadcastWith()

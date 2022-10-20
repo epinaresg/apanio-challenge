@@ -45,6 +45,7 @@ return [
             'client_options' => [
                 // Guzzle client options: https://docs.guzzlephp.org/en/stable/request-options.html
             ],
+            'random_string' => env('PUSHER_RANDOM_STRING', '1234')
         ],
 
         'ably' => [
