@@ -5,7 +5,7 @@
     Npm v8.19.2
     Docker Windows v4.11.1
 
-# Pasos a seguir
+# Pasos a seguir para levantar el proyecto
 
 Utilizamos Laravel Sail para levantar el entorno de desarrollo (https://laravel.com/docs/9.x/sail)
 
@@ -24,7 +24,7 @@ Para obtener el precio de BTC usamos el comando
 
     ./vendor/bin/sail artisan get:bitcoin.price {sleepTime}
 
-Donde el sleepTime es el tiempo que estara el proceso inactivo antes de que se ejecute, para poder emular una llamada cada 10 segundo en el crontab configuramos los siguientes procesos
+Donde el sleepTime es el tiempo que estará el proceso inactivo antes de que se ejecute, para poder emular una llamada cada 10 segundo, en el crontab configuramos los siguientes procesos:
 
     * * * * * php /{project_path}/artisan get:bitcoin.price 0
     * * * * * php /{project_path}/artisan get:bitcoin.price 10
