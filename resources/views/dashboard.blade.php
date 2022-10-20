@@ -26,22 +26,22 @@
                 <section class="resument-asset">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-12">
                                 <h1>{{ $cryptocurrency->name }} ({{ $cryptocurrency->symbol }})</h1>
                                 <h2 id="v-price">{{ $cryptocurrency->price }}</h2>
                                 <h3 class="{{ $cryptocurrency->change_percent_prev_price > 0 ? 'positive' : 'negative' }}"><span id="v-change-percent" >{{ $cryptocurrency->change_percent_prev_price }}</span>%</h3>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-12">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
                                         <span class="sub-header">Market Cap</span>
                                         <span class="numeral-text" id="v-market-cap">{{ $cryptocurrency->market_cap_usd }}</span>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
                                         <span class="sub-header">Volume (24Hr)</span>
                                         <span class="numeral-text" id="v-volumen-24-hrs">{{ $cryptocurrency->volume_usd_24_hours }}</span>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
                                         <span class="sub-header">Supply</span>
                                         <span class="numeral-text"><span id="v-supply">{{ $cryptocurrency->supply }}</span> {{ $cryptocurrency->symbol }}</span>
                                     </div>
