@@ -1,0 +1,62 @@
+// Fonts
+@import url("https://fonts.bunny.net/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+#app-container {
+    .logo-container {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .resument-asset {
+        background-image: linear-gradient(
+            to right,
+            rgb(63, 81, 181),
+            rgb(100, 181, 246)
+        );
+        color: #fff;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .sub-header {
+        font-size: 14px;
+    }
+
+    .numeral-text {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .negative {
+        color: rgb(239, 154, 154);
+    }
+
+    .positive {
+        color: rgb(24, 198, 131);
+    }
+}
