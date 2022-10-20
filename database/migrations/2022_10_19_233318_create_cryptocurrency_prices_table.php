@@ -15,7 +15,7 @@ return new class () extends Migration {
         Schema::create('cryptocurrency_prices', function (Blueprint $table) {
             $table->id();
 
-            $table->bigInteger('cryptocurrency_id');
+            $table->unsignedBigInteger('cryptocurrency_id');
             $table->foreign('cryptocurrency_id')->references('id')->on('cryptocurrencies');
             $table->index('cryptocurrency_id');
 
