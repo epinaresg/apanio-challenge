@@ -24,7 +24,7 @@ Para obtener el precio de BTC usamos el comando
 
     ./vendor/bin/sail artisan get:bitcoin.price {sleepTime}
 
-Donde el sleepTime es el tiempo que estará el proceso inactivo antes de que se ejecute, para poder emular una llamada cada 10 segundo, en el crontab configuramos los siguientes procesos:
+Donde el sleepTime es el tiempo que estará el proceso inactivo antes de que se ejecute, para poder emular una llamada cada 10 segundo, en el crontab lo configuramos de la siguiente manera:
 
     * * * * * php /{project_path}/artisan get:bitcoin.price 0
     * * * * * php /{project_path}/artisan get:bitcoin.price 10
