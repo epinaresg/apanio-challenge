@@ -16,7 +16,7 @@
 
         <tr>
             <th scope="row">{{ abs($lastPrices->count() - $k) }}</th>
-            <td>{{ $cryptocurrencyPrice->created_at->format('d/m/Y h:i:s') }} UTC</td>
+            <td>{{ $cryptocurrencyPrice->created_at->format('d/m/Y H:i:s') }} UTC</td>
             <td>{{ $cryptocurrencyPrice->price }} <small  class="{{ $cryptocurrencyPrice->change_percent_prev_price > 0 ? 'positive' : 'negative' }}">{{ $cryptocurrencyPrice->change_percent_prev_price }}%</small></td>
             <td>{{ $cryptocurrencyPrice->market_cap_usd }}</td>
             <td>{{ $cryptocurrencyPrice->volume_usd_24_hours }}</td>
